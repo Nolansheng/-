@@ -1,0 +1,41 @@
+#树梅派截图
+1.在Raspbian上安装scrot：
+命令： sudo apt-get install scrot
+2.安装可以通过终端打开截图的shotwell：
+命令： sudo apt-get install shotwell
+
+使用：scrot 截全屏 scrot-s选取
+
+
+#默认python设置为python3
+ 1.命令行中python查看当前版本
+ 2.sudo rm /usr/bin/python 移除当前版本
+ 3.sudo ln -s /usr/bin/python3 /usr/bin/python 设置3为当前版本
+ 4.修改pip版本，用which pip查看pip位置，然后修改为python3
+
+//安pybluez包
+sudo apt-get install python-dev
+sudo apt-get install libbluetooth-dev
+sudo pip3 install pybluez
+
+//测试代码（查看是否正常运行）
+import bluetooth
+print("looking for nearby devices...")
+nearby_devices = bluetooth.discover_devices(lookup_names = True)
+print("found %d devices" % len(nearby_devices))
+
+for addr, name in nearby_devices:
+    print("%s-%s" % (addr,name))
+
+def what_services(addr,name):
+    print("%s-%s" % (addr,name))
+
+    for services in bluetooth.find_service(address = addr):
+        print("Name: %s" %(services["name"]))
+        print("Description: %s" %(services["description"]))
+        print("Protocol: %s" %(services["protocol"]))
+        print("Provider: %s" %(services["provider"]))
+        print("Port: %s" %(services["port"]))
+        print("Service id: %s" %(services["service-id"]))
+        print("")
+        print("")
