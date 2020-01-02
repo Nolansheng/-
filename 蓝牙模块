@@ -18,7 +18,8 @@ sudo apt-get install python-dev
 sudo apt-get install libbluetooth-dev
 sudo pip3 install pybluez
 
-//测试代码（查看是否正常运行）
+#测试代码（查看是否正常运行）
+```
 import bluetooth
 print("looking for nearby devices...")
 nearby_devices = bluetooth.discover_devices(lookup_names = True)
@@ -39,3 +40,4 @@ def what_services(addr,name):
         print("Service id: %s" %(services["service-id"]))
         print("")
         print("")
+```
