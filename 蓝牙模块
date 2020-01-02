@@ -1,4 +1,5 @@
-#树梅派截图
+树梅派截图
+================
 1.在Raspbian上安装scrot：
 命令： sudo apt-get install scrot
 2.安装可以通过终端打开截图的shotwell：
