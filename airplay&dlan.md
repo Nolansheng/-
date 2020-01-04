@@ -25,3 +25,4 @@ sudo chmod +x /etc/init.d/shairport
 sudo chmod +x /etc/default/shairport
 sudo update-rc.d shairport defaults
 ```
+# dlna
