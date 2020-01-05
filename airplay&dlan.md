@@ -54,3 +54,17 @@ sudo apt-get remove --purge minidlna
 可在 网页 IP:8200查看
 
 ```
+
+# dlna render 客户端
+## 安装
+```
+1. sudo apt-get install libupnp-dev libgstreamer1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-alsa autoconf gstreamer1.0-pulseaudio
+
+2. git clone http://github.com/hzeller/gmrender-resurrect.git
+3. cd gmrender-resurrect
+4. sudo apt-get install autoconf
+5. ./autogen.sh
+6. ./configure
+7. sudo make install
+8. gmediarender -I 192.168.31.70 -f "Pi"
+```
