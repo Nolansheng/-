@@ -66,5 +66,8 @@ sudo apt-get remove --purge minidlna
 5. ./autogen.sh
 6. ./configure
 7. sudo make install
-8. gmediarender -I 192.168.31.70 -f "Pi"
+8. sudo cp /gmrender-resurrect/scripts/init.d/gmediarenderer /etc/init.d
 ```
+## 运行
+1. gmediarender -I 192.168.31.70 -f "Pi"
+2. /etc/init.d/gmediarenderer start
