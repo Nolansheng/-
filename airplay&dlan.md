@@ -54,6 +54,7 @@ sudo apt-get remove --purge minidlna
 可在 网页 IP:8200查看
 
 ```
+## 要连在同一Wi-Fi下
 
 # dlna render 客户端
 ## 安装
