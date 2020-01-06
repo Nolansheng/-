@@ -70,5 +70,5 @@ sudo apt-get remove --purge minidlna
 8. sudo cp /gmrender-resurrect/scripts/init.d/gmediarenderer /etc/init.d
 ```
 ## 运行
-1. gmediarender -I 192.168.31.70 -f "Pi"
+1. gmediarender -I 192.168.31.70 -f "Pi"  （根据IP根据实际变动，ctl-c退出）
 2. sudo /etc/init.d/gmediarenderer start
