@@ -70,4 +70,4 @@ sudo apt-get remove --purge minidlna
 ```
 ## 运行
 1. gmediarender -I 192.168.31.70 -f "Pi"
-2. /etc/init.d/gmediarenderer start
+2. sudo /etc/init.d/gmediarenderer start
