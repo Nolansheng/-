@@ -21,7 +21,14 @@
 ```
 ## 重启samba
 - sudo /etc/init.d/samba restart
-- sudo samba restart
+- sudo samba restart    
+
+
+Job for samba-ad-dc.service failed because the control process exited with error code.
+
+
+
+
 # aria2
 ### 强大的下载软件，支持BT下载，通过web控制台控制
 ## 安装
