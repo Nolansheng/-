@@ -20,11 +20,7 @@
    read only = no
 ```
 ## 重启samba
-- sudo /etc/init.d/samba restart
-- sudo samba restart    
-
-
-Job for samba-ad-dc.service failed because the control process exited with error code.
+- sudo service smbd restart    
 
 
 
