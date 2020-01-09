@@ -49,7 +49,25 @@ log_timestamp true
 include_dir /etc/mosquitto/conf.d
 ```
 
+- 配置文件解释
+```
+# 4种日志模式：stdout、stderr、syslog、topic
+# none 则表示不记日志，此配置可以提升些许性能
+log_dest none
 
+# 选择日志的级别（可设置多项）
+#log_type error
+#log_type warning
+#log_type notice
+#log_type information
+
+# 是否记录客户端连接信息
+#connection_messages true
+
+# 是否记录日志时间
+#log_timestamp true
+```
+- 默认端口1883.地址为IP地址
 
 
 4. 重启服务
@@ -66,5 +84,11 @@ sudo /etc/init.d/mosquitto start
   - 在终端2中输入：
   ```
   mosquitto_pub -d -t hello/world -m "hello from terminal window2"
+  
+  5. 命令解释
+  ```
+  例"mosquitto_sub -t -v sensor"开启一个终端用于订阅消息
+  -d 打印debug消息
+  -h 指定域名
   
  
